@@ -97,11 +97,9 @@ public class Main {
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
 
-        // Idiot toss did not like my naming schemes lil idiot have to change these soon
-        float dyx = 0; // Down Y Axis
-        float uyx = 0; // Up Y Axis
-        float rx = 0; // Right X axis
-        float lx = 0; // Left X axis
+        // Suck my dick dmoz
+        float x = 0.0f; // X Axis
+        float y = 0.0f; // Y Axis
 
 
         while (!glfwWindowShouldClose(window)) {
@@ -109,19 +107,19 @@ public class Main {
             glfwPollEvents();
 
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-                uyx += 0.005f;
+                y -= 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-                dyx -= 0.005f;
+                y += 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-                rx += 0.005f;
+                x += 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-                lx -= 0.005f;
+                x -= 0.005f;
             }
 
             if(glfwGetKey(window, GLFW_KEY_F) == GL_TRUE) {System.out.print("Test");}
@@ -132,17 +130,17 @@ public class Main {
             // Draw the square
             glBegin(GL_QUADS);
             glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
-            glVertex2f(-0.5f + rx + lx, 0.5f + uyx + dyx); ;
+            glVertex2f(-0.5f + x, 0.5f + y); ;
 
 
             glColor4f(0.0f, 1.0f, 0.0f, 0.0f);
-            glVertex2f(0.5f + rx + lx, 0.5f + uyx + dyx);
+            glVertex2f(0.5f + x, 0.5f + y);
 
             glColor4f(0.0f, 0.0f, 1.0f, 0.0f);
-            glVertex2f(0.5f + rx + lx, -0.5f + uyx + dyx);
+            glVertex2f(0.5f + x, -0.5f + y);
 
             glColor4f(1.0f, 1.0f, 1.0f, 0.0f);
-            glVertex2f(-0.5f + rx + lx, -0.5f + uyx + dyx);
+            glVertex2f(-0.5f + x, -0.5f + y);
             glEnd();
 
             // Swap buffers
