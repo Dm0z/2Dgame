@@ -97,7 +97,7 @@ public class Main {
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
 
-
+        // Idiot toss did not like my naming schemes lil idiot have to change these soon
         float dyx = 0; // Down Y Axis
         float uyx = 0; // Up Y Axis
         float rx = 0; // Right X axis
