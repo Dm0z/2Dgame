@@ -1,12 +1,8 @@
 package org.example;
-import org.lwjgl.*;
-import org.lwjgl.Version;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
-import org.lwjgl.system.*;
 import org.lwjgl.system.MemoryStack;
 
-import java.io.IOException;
 import java.nio.*;
 
 import static org.lwjgl.glfw.Callbacks.*;
@@ -43,7 +39,7 @@ public class Main {
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
         // Create the window
-        window = glfwCreateWindow(840, 620, "2D Gam", NULL, NULL);
+        window = glfwCreateWindow(1024, 768, "2D Gam", NULL, NULL);
 
         glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
             if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
