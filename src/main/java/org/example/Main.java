@@ -97,7 +97,7 @@ public class Main {
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
 
-        // lil bro broke tow things SO I HAD TO FIX  IT
+        // lil bro broke two things SO I HAD TO FIX  IT
         float x = 0.0f; // X Axis
         float y = 0.0f; // Y Axis
 
