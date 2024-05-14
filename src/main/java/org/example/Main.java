@@ -47,7 +47,7 @@ public class Main {
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
         // Create the window
-        window = glfwCreateWindow(840, 620, "2D HorrorGame", NULL, NULL);
+        window = glfwCreateWindow(840, 620, "2D Gam", NULL, NULL);
         if ( window == NULL )
             throw new RuntimeException("Failed to create the GLFW window");
 
@@ -109,19 +109,19 @@ public class Main {
             glfwPollEvents();
 
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-                uyx += 0.001f;
+                uyx += 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-                dyx -= 0.001f;
+                dyx -= 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
-                rx += 0.001f;
+                rx += 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-                lx -= 0.001f;
+                lx -= 0.005f;
             }
 
             if(glfwGetKey(window, GLFW_KEY_F) == GL_TRUE) {System.out.print("Test");}
