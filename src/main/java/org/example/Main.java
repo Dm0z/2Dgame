@@ -109,17 +109,14 @@ public class Main {
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
                 y += 0.005f;
             }
-
+            if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+                x -= 0.005f;
+            }
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
                 y -= 0.005f;
             }
-
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
                 x += 0.005f;
-            }
-
-            if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-                x -= 0.005f;
             }
 
             if(glfwGetKey(window, GLFW_KEY_F) == GL_TRUE) {System.out.print("Test");}
