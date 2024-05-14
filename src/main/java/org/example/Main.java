@@ -97,7 +97,7 @@ public class Main {
         // Run the rendering loop until the user has attempted to close
         // the window or has pressed the ESCAPE key.
 
-        // Suck my dick dmoz
+        // lil bro broke tow things SO I HAD TO FIX  IT
         float x = 0.0f; // X Axis
         float y = 0.0f; // Y Axis
 
@@ -107,11 +107,11 @@ public class Main {
             glfwPollEvents();
 
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-                y -= 0.005f;
+                y += 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-                y += 0.005f;
+                y -= 0.005f;
             }
 
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
