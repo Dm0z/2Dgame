@@ -37,10 +37,6 @@ public class Main {
 
         GLFWErrorCallback.createPrint(System.err).set();
 
-
-        if ( !glfwInit() )
-            throw new IllegalStateException("Unable to initialize GLFW");
-
         // Configure GLFW
         glfwDefaultWindowHints(); // optional, the current window hints are already the default
         glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE); // the window will stay hidden after creation
@@ -48,9 +44,6 @@ public class Main {
 
         // Create the window
         window = glfwCreateWindow(840, 620, "2D Gam", NULL, NULL);
-        if ( window == NULL )
-            throw new RuntimeException("Failed to create the GLFW window");
-
 
         glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
             if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
