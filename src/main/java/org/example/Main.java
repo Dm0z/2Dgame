@@ -131,17 +131,17 @@ public class Main {
 
             // Draw the square
             glBegin(GL_QUADS);
-            glColor4f(1, 0, 0, 0);
+            glColor4f(1.0f, 0.0f, 0.0f, 0.0f);
             glVertex2f(-0.5f + rx + lx, 0.5f + uyx + dyx); ;
 
 
-            glColor4f(0, 1, 0, 0);
+            glColor4f(0.0f, 1.0f, 0.0f, 0.0f);
             glVertex2f(0.5f + rx + lx, 0.5f + uyx + dyx);
 
-            glColor4f(0, 0, 1, 0);
+            glColor4f(0.0f, 0.0f, 1.0f, 0.0f);
             glVertex2f(0.5f + rx + lx, -0.5f + uyx + dyx);
 
-            glColor4f(1, 1, 1, 0);
+            glColor4f(1.0f, 1.0f, 1.0f, 0.0f);
             glVertex2f(-0.5f + rx + lx, -0.5f + uyx + dyx);
             glEnd();
 
