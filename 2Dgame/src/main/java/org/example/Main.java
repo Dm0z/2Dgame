@@ -98,19 +98,25 @@ public class Main {
         // the window or has pressed the ESCAPE key.
 
 
-        float rx = 0; // Right X axis
-        float lx = 0; // Left X axis
         float dyx = 0; // Down Y Axis
         float uyx = 0; // Up Y Axis
+        float rx = 0; // Right X axis
+        float lx = 0; // Left X axis
+
 
         while (!glfwWindowShouldClose(window)) {
 
             glfwPollEvents();
             /*
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
-                x += 0.001f;
+                uyx += 0.001f;
             }
              */
+            /*
+            if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
+                dyx += 0.001f;
+            }
+            */
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
                 rx += 0.001f;
             }
@@ -118,16 +124,7 @@ public class Main {
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
                 lx -= 0.001f;
             }
-            /*
-            if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
-                x += 0.001f;
-            }
-            */
-            /*
-            if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-                x += 0.001f;
-            }
-            */
+
             if(glfwGetKey(window, GLFW_KEY_F) == GL_TRUE) {System.out.print("Test");}
 
             // Clear the color buffer
