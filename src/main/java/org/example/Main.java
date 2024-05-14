@@ -31,6 +31,8 @@ public class Main {
 
     private void init() {
 
+        glfwInit();
+
         GLFWErrorCallback.createPrint(System.err).set();
 
         // Configure GLFW
