@@ -107,16 +107,15 @@ public class Main {
         while (!glfwWindowShouldClose(window)) {
 
             glfwPollEvents();
-            /*
+
             if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
                 uyx += 0.001f;
             }
-             */
-            /*
+
             if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
-                dyx += 0.001f;
+                dyx -= 0.001f;
             }
-            */
+
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
                 rx += 0.001f;
             }
@@ -133,16 +132,17 @@ public class Main {
             // Draw the square
             glBegin(GL_QUADS);
             glColor4f(1, 0, 0, 0);
-            glVertex2f(-0.5f + rx +lx, 0.5f);
+            glVertex2f(-0.5f + rx + lx, 0.5f + uyx + dyx); ;
+
 
             glColor4f(0, 1, 0, 0);
-            glVertex2f(0.5f + rx +lx, 0.5f);
+            glVertex2f(0.5f + rx + lx, 0.5f + uyx + dyx);
 
             glColor4f(0, 0, 1, 0);
-            glVertex2f(0.5f + rx +lx, -0.5f);
+            glVertex2f(0.5f + rx + lx, -0.5f + uyx + dyx);
 
             glColor4f(1, 1, 1, 0);
-            glVertex2f(-0.5f + rx + lx, -0.5f);
+            glVertex2f(-0.5f + rx + lx, -0.5f + uyx + dyx);
             glEnd();
 
             // Swap buffers
