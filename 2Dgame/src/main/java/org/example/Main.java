@@ -101,7 +101,7 @@ public class Main {
         float rx = 0; // Right X axis
         float lx = 0; // Left X axis
         float dyx = 1; // Down Y Axis
-        float uyx = 1; //up Y Axis
+        float uyx = 1; // Up Y Axis
 
         while (!glfwWindowShouldClose(window)) {
 
