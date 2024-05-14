@@ -100,8 +100,8 @@ public class Main {
 
         float rx = 0; // Right X axis
         float lx = 0; // Left X axis
-        float dyx = 1; // Down Y Axis
-        float uyx = 1; // Up Y Axis
+        float dyx = 0; // Down Y Axis
+        float uyx = 0; // Up Y Axis
 
         while (!glfwWindowShouldClose(window)) {
 
@@ -113,6 +113,10 @@ public class Main {
              */
             if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS) {
                 rx += 0.001f;
+            }
+
+            if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
+                lx -= 0.001f;
             }
             /*
             if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS) {
@@ -132,16 +136,16 @@ public class Main {
             // Draw the square
             glBegin(GL_QUADS);
             glColor4f(1, 0, 0, 0);
-            glVertex2f(-0.5f + rx, 0.5f);
+            glVertex2f(-0.5f + rx +lx, 0.5f);
 
             glColor4f(0, 1, 0, 0);
-            glVertex2f(0.5f + rx, 0.5f);
+            glVertex2f(0.5f + rx +lx, 0.5f);
 
             glColor4f(0, 0, 1, 0);
-            glVertex2f(0.5f + rx, -0.5f);
+            glVertex2f(0.5f + rx +lx, -0.5f);
 
             glColor4f(1, 1, 1, 0);
-            glVertex2f(-0.5f + rx, -0.5f);
+            glVertex2f(-0.5f + rx + lx, -0.5f);
             glEnd();
 
             // Swap buffers
