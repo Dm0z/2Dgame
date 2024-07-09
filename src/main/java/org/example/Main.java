@@ -41,7 +41,7 @@ public class Main {
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
 
         // Create the window
-        window = glfwCreateWindow(1024, 768, "penguin Unite", NULL, NULL);
+        window = glfwCreateWindow(1024, 768, "Beak to Beak", NULL, NULL);
 
         glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
             if ( key == GLFW_KEY_ESCAPE && action == GLFW_RELEASE )
