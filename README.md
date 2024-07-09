@@ -1,7 +1,7 @@
 2 idiots making a game
 
 # TODO LIST
-- [ ] Give the game a name
+- [x] Give the game a name
 - [ ] Make the README even fancier
 - [ ] Better resolution
 - [ ] Drawing characters
