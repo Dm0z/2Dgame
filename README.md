@@ -6,7 +6,7 @@
 
 # TODO LIST
 - [x] Give the game a name
-- [ ] Make the README even fancier
+- [x] Make the README even fancier
 - [ ] Better resolution
 - [ ] Drawing characters
 - [ ] Better controls
