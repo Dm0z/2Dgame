@@ -1,4 +1,4 @@
-![beaktobeak](https://github.com/Dm0z/2Dgame/assets/106503064/a5a64f1f-0a31-4ba1-a1f1-f8f94017b5e0)
+![beaktobeak](https://github.com/Dm0z/Beak-to-Beak/assets/106503064/5693d630-9749-444d-a8bb-ec7646888ff2)
 
 
 2 idiots making a game
