@@ -4,6 +4,13 @@
 2 idiots making a game
 
 
+# BULIDING
+
+To build this project you can either use make or run
+```
+mvn clean compile assembly:single
+```
+
 # TODO LIST
 - [x] Give the game a name
 - [x] Make the README even fancier
